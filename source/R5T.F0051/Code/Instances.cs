@@ -19,6 +19,9 @@ namespace R5T.F0051
         public static IProjectFileNameOperator ProjectFileNameOperator { get; } = F0052.ProjectFileNameOperator.Instance;
         public static IProjectFileOperator ProjectFileOperator { get; } = F0020.ProjectFileOperator.Instance;
         public static IProjectPathsOperator ProjectPathsOperator { get; } = F0052.ProjectPathsOperator.Instance;
+        public static IProjectSdkStrings ProjectSdkStrings { get; } = F0020.ProjectSdkStrings.Instance;
+        public static IProjectXmlOperator ProjectXmlOperator { get; } = F0020.ProjectXmlOperator.Instance;
+        public static ITargetFrameworkMonikerStrings TargetFrameworkMonikerStrings { get; } = F0020.TargetFrameworkMonikerStrings.Instance;
         public static ITextFileGenerator TextFileGenerator { get; } = F0054.TextFileGenerator.Instance;
     }
 }
