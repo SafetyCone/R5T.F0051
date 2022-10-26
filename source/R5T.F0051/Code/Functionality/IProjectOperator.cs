@@ -54,11 +54,11 @@ namespace R5T.F0051
 			string projectDefaultNamespaceName)
         {
 			// Add Projects.
-			Instances.ProjectFileOperator.AddProjectReference_Synchronous(
+			Instances.ProjectFileOperator.AddProjectReference_Idempotent_Synchronous(
 				projectFilePath,
 				@"C:\Code\DEV\Git\GitHub\SafetyCone\R5T.F0035\source\R5T.F0035\R5T.F0035.csproj");
 
-			Instances.ProjectFileOperator.AddProjectReference_Synchronous(
+			Instances.ProjectFileOperator.AddProjectReference_Idempotent_Synchronous(
 				projectFilePath,
 				@"C:\Code\DEV\Git\GitHub\SafetyCone\R5T.F0037\source\R5T.F0037\R5T.F0037.csproj");
 
@@ -100,7 +100,7 @@ namespace R5T.F0051
 
             foreach (var dependencyProjectFilePath in dependencyProjectFilePaths)
             {
-				Instances.ProjectFileOperator.AddProjectReference_Synchronous(
+				Instances.ProjectFileOperator.AddProjectReference_Idempotent_Synchronous(
 					projectFilePath,
 					dependencyProjectFilePath);
 			}
