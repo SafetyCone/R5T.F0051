@@ -147,7 +147,7 @@ namespace R5T.F0051
 				projectDefaultNamespaceName);
 
 			// Modify the project.
-			Instances.ProjectFileOperator.InModifyProjectFileContext(
+			Instances.ProjectFileOperator.InModifyProjectFileContext_Synchronous(
 				projectFilePath,
 				projectElement =>
 				{
