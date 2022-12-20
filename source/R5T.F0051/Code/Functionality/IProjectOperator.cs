@@ -31,7 +31,7 @@ namespace R5T.F0051
 
 			logger.LogInformation($"Creating new project file...{Environment.NewLine}\t{projectFilePath}");
 
-			Instances.ProjectFileOperator.Create_New(
+			ProjectFileGenerator.Instance.CreateNew(
 				projectFilePath,
 				projectType);
 
