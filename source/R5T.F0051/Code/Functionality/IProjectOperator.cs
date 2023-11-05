@@ -170,7 +170,7 @@ namespace R5T.F0051
 			// Create the properties directory.
 			var propertiesDirectoryPath = Instances.ProjectPathsOperator.GetPropertiesDirectoryPath(projectFilePath);
 			
-			Instances.FileSystemOperator.CreateDirectory_OkIfAlreadyExists(propertiesDirectoryPath);
+			Instances.FileSystemOperator.Create_Directory_OkIfAlreadyExists(propertiesDirectoryPath);
 
 			// Create the launch settings JSON file.
 			var launchSettingsJsonFilePath = Instances.ProjectPathsOperator.GetLaunchSettingsJsonFilePath(projectFilePath);
@@ -225,7 +225,7 @@ namespace R5T.F0051
 			// Create the code directory.
 			var codeDirectoryPath = Instances.ProjectPathsOperator.GetCodeDirectoryPath(projectFilePath);
 
-			Instances.FileSystemOperator.CreateDirectory_OkIfAlreadyExists(codeDirectoryPath);
+			Instances.FileSystemOperator.Create_Directory_OkIfAlreadyExists(codeDirectoryPath);
 
 			// Create the instances file.
 			var instanceFilePath = Instances.ProjectPathsOperator.GetInstancesFilePath(projectFilePath);
