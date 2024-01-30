@@ -17,15 +17,15 @@ namespace R5T.F0051
 			ProjectType projectType,
 			ILogger logger)
 		{
-			var solutionDirectoryPath = Instances.PathOperator.GetParentDirectoryPath_ForFile(solutionFilePath);
+			var solutionDirectoryPath = Instances.PathOperator.Get_ParentDirectoryPath_ForFile(solutionFilePath);
 
 			var projectDirectoryName = Instances.ProjectDirectoryNameOperator.GetProjectDirectoryName_FromProjectName(projectName);
-			var projectDirectoryPath = Instances.PathOperator.GetDirectoryPath(
+			var projectDirectoryPath = Instances.PathOperator.Get_DirectoryPath(
 				solutionDirectoryPath,
 				projectDirectoryName);
 
 			var projectFileName = Instances.ProjectFileNameOperator.GetProjectFileName_FromProjectName(projectName);
-			var projectFilePath = Instances.PathOperator.GetFilePath(
+			var projectFilePath = Instances.PathOperator.Get_FilePath(
 				projectDirectoryPath,
 				projectFileName);
 
