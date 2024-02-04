@@ -24,7 +24,7 @@ namespace R5T.F0051
 				solutionDirectoryPath,
 				projectDirectoryName);
 
-			var projectFileName = Instances.ProjectFileNameOperator.GetProjectFileName_FromProjectName(projectName);
+			var projectFileName = Instances.ProjectFileNameOperator.Get_ProjectFileName_FromProjectName(projectName);
 			var projectFilePath = Instances.PathOperator.Get_FilePath(
 				projectDirectoryPath,
 				projectFileName);
