@@ -6,7 +6,7 @@ namespace R5T.F0051
     public static class Instances
     {
         public static F0053.ICodeFileGenerator CodeFileGenerator { get; } = F0053.CodeFileGenerator.Instance;
-        public static F0000.IFileSystemOperator FileSystemOperator { get; } = F0000.FileSystemOperator.Instance;
+        public static L0066.IFileSystemOperator FileSystemOperator { get; } = L0066.FileSystemOperator.Instance;
         public static L0066.IPathOperator PathOperator { get; } = L0066.PathOperator.Instance;
         public static F0052.IProjectDirectoryNameOperator ProjectDirectoryNameOperator { get; } = F0052.ProjectDirectoryNameOperator.Instance;
         public static F0052.IProjectFileNameOperator ProjectFileNameOperator { get; } = F0052.ProjectFileNameOperator.Instance;
